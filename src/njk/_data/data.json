@@ -1,0 +1,19 @@
+{
+  "members": [
+    {
+      "title": "Freddy Mercury",
+      "author": "Lead Vocals and Piano",
+      "blurb": "blurb."
+    },
+    {
+      "title": "Brian May",
+      "author": "Guitar and Vocals",
+      "blurb": "blurb."
+    },
+    {
+      "title": "Roger Taylor",
+      "author": "Drums and Vocals",
+      "blurb": "blurb."
+    }
+  ] 
+}
