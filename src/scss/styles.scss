@@ -1,14 +1,25 @@
-body {
-  font-family: Arial, Helvetica, sans-serif
-  font-size 50; 
+.body-text {
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 
 h1 {
   font-size: 2.5rem;
-  margin: 15px;
+  font-family:'ZCOOL XiaoWei', serif;
+}
+
+h2, h3, h4, h5 {
+  font-family:'ZCOOL XiaoWei', serif;
 }
 
 footer{
 text-align: center;
 margin-top: 180px;
+}
+
+p {
+  font-family:'ZCOOL XiaoWei', serif;
+}
+
+body {
+  background-color: lightgray;
 }

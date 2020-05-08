@@ -1,11 +1,13 @@
 {% extends '_layouts/base.njk' %}
 
-<title>QUEEN | {% block page_title %}QUEEN{% endblock %}</title>
+{% block page_title %}QUEEN{% endblock %} 
 
 {% block page_description %}The search description for this page goes here.{% endblock %}
 
 {% block content %}
 <div class="container">
+<p> Queen are a British rock band formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock. 
+ <a href="https://en.wikipedia.org/wiki/Queen_(band)" > Source: Wikipedia</a></p> 
   <h1>Band Members</h1>
     <div class="row">
       {% for member in queen.members %}
@@ -15,26 +17,24 @@
           <div class="card-body">
             <h5 class ="card-title"> {{member.name}}</h5>
             <p class="card-text">{{ member.instruments}}</p>
-            <p> <a href="{{member.slug}}.html">Link to {{member.name}}</a> Lead Vocals and Piano.</p>
+            <p> <a href="{{member.slug}}.html">Link to {{member.name}}</a></p>
           </div>
         </div>
       </div>
     {% endfor %}
   </div>
-<div class="container">
   <h2> Discography </h2>
   <div class="row">
-  {% for discography in queen.discography %}
-    <div class="col-sm-6 col-lg-3">
-        <img src="img/discography/{{discs.image}}" class="card-img-top" alt="...">
-          <div class="card-body">
-          <h5 class ="card-title"> {{discography.name}}</h5>
-            <p class="card-text">{{ discography.year}}</p>
-        </div>
-      </div> 
-    </div>
+  {% for disc in queen.discography %}
+    <div class="col-sm-4 col-lg-3">
+      <img src="img/discs/{{disc.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class ="card-title"> {{disc.title}}</h5>
+        <p class="card-text">{{ disc.year}}</p>
+      </div>
+    </div> 
+  {% endfor %}
   </div>
 </div>
-{% endfor %}
 {% endblock %}
 
